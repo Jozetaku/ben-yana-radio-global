@@ -1,11 +1,11 @@
 /* =============================================================
-   ZETAKU THEME — drop-in, no build step required.
+   BEN & YANA THEME — drop-in, no build step required.
    Works alongside the Tailwind CDN script already on the page.
 
    Load order matters:
      1. <script src="https://cdn.tailwindcss.com"></script>
      2. <script>tailwind.config = { ... }</script>   (see KIMI-BRIEF.md)
-     3. <link rel="stylesheet" href="zetaku-theme.css">   <-- this file, LAST
+     3. <link rel="stylesheet" href="ben-yana-theme.css">   <-- this file, LAST
 
    Every value here comes from tokens.json. If a value is not in this
    file, it does not belong on the site.
@@ -215,15 +215,15 @@ p { max-width: 62ch; }
    ============================================================= */
 
 @media (hover: hover) and (pointer: fine) {
-  .zetaku-cursor__pulse {
+  .ben-yana-cursor__pulse {
     border-color: var(--z-mai);
     background: rgba(176, 139, 69, .14);
     box-shadow: 0 0 20px 8px rgba(176, 139, 69, .22);
   }
-  .zetaku-cursor__pulse::after { border-color: rgba(176, 139, 69, .32); }
-  .zetaku-cursor.is-interactive .zetaku-cursor__pulse {
+  .ben-yana-cursor__pulse::after { border-color: rgba(176, 139, 69, .32); }
+  .ben-yana-cursor.is-interactive .ben-yana-cursor__pulse {
     border-color: var(--z-mai-lift);
     background: rgba(201, 164, 92, .18);
   }
-  .zetaku-cursor.is-interactive .zetaku-cursor__pulse::after { border-color: rgba(201, 164, 92, .55); }
+  .ben-yana-cursor.is-interactive .ben-yana-cursor__pulse::after { border-color: rgba(201, 164, 92, .55); }
 }
